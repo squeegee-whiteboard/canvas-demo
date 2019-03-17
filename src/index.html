@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Paper.js Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Paper.js is pretty cool</h2>
+            <button class="button active" id="drawButton">Draw</button>
+            <button class="button" id="eraseButton">Erase</button>
+            <span class="width">
+                Width:
+                <button class="button" id="widthMinus">-</button>
+                <span class="spacer"></span>
+                <span id="width">5</span>
+                <span class="spacer"></span>
+                <button class="button" id="widthPlus">+</button>
+            </span>
+            <span class="pickr">Color:<span class="spacer"></span><div id="pickr"></div></span>
+        </div>
+        <div class="button-container">
+            <button class="button" id="clearButton">Clear</button>
+            <button class="button" id="exportButton">Export</button>
+            <button class="button" id="importButton">Import</button>
+            <button class="button" id="importSVGButton">Import SVG</button>
+        </div>
+        <canvas id="canvas" resize></canvas>
+        <textarea id="importExportText"></textarea>
+    </div>
+</body>
+</html>
